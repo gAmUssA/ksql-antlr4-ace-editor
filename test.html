@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KSQL editor created with ANTLR4 and ACE</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="bower_components/ace-builds/src-noconflict/ace.js"></script>
+    <script src="my-mode.js"></script>
+</head>
+<body>
+<div id="editor">CREATE STREAM g4 AS SELECT * FROM f2 PARTITION BY name;</div>
+</body>
+<script>
+    var editor = ace.edit("editor");
+    editor.getSession().setMode("ace/mode/my-mode");
+</script>
+</html>
